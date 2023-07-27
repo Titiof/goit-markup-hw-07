@@ -1,29 +1,103 @@
 .workers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: var(--light-mode-backgrounds);
 }
 
-.workers-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.subtitile {
+  margin-bottom: 72px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  color: var(--dark-overlays-shadows-headings);
 }
 
 .workers-list {
-  display: flex;
-  gap: 24px;
+  padding: 0 16px;
+  display: block;
 }
 
 .workers-item {
+  width: 264px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   text-transform: capitalize;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   background-color: var(--light-mode-backgrounds);
+  transition-property: background-color;
+  transition-duration: var(--timing-duration);
+  transition-timing-function: var(--timing-function);
+  background-color: var(--header-team-card-background);
 }
 
+.workers-item:not(:last-child) {
+  margin-bottom: 72px;
+}
+
+.workers-item-name {
+  padding: 32px 0;
+}
+
+.workers-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  color: var(--dark-overlays-shadows-headings);
+}
+
+.workers-item-p {
+  margin: 8px auto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--body-text-slate);
+}
+
+@media screen and (min-width: 768px) {
+  .workers-list {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 24px;
+  }
+
+  .workers-item {
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    background-color: var(--light-mode-backgrounds);
+  }
+
+  .workers-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .workers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .workers-list {
+    display: flex;
+    gap: 24px;
+  }
+}
 .social-list {
   display: flex;
   justify-content: center;
