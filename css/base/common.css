@@ -44,11 +44,14 @@ button {
   font-style: normal;
 }
 
-
 .margbt {
   margin-bottom: 24px;
 }
 
 .margb {
   margin-bottom: 16px;
+}
+
+.text-centr {
+  text-align: center;
 }
