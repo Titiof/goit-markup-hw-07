@@ -1,0 +1,19 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --modal-background: #fcfcfc;
+  --header-team-card-background: #ffffff;
+  --hero-image-background: #2e2f42;
+  --light-mode-backgrounds: #f4f4fd;
+  --accent-hairlines-subtle-backgrounds: #e7e9fc;
+  --body-text-slate: #434455;
+  --body-text-light-slate: #8e8f99;
+  --valid-success: #31d0aa;
+  --dark-overlays-shadows-headings: #2e2f42;
+  --pressed-state-cta: #404bbf;
+  --cta-focused-active-links: #4d5ae5;
+  --column-indent: 24px;
+  --column-items: 3;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-duration: 250ms;
+}

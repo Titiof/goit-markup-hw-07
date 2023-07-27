@@ -1,0 +1,24 @@
+/* UTILS */
+
+@import './utils/variables.css';
+
+/* BASE STAYLS */
+
+@import './base/common.css';
+@import './base/container.css';
+@import './base/section.css';
+
+/* COMPOMENTS */
+
+@import './components/index-hero.css';
+@import './components/index-studio.css';
+@import './components/index-produktion.css';
+@import './components/index-workers.css';
+@import './components/index-costumers.css';
+@import './components/portfolio-hero';
+
+/* LAYOUT */
+
+@import './layout/header.css';
+@import './layout/modal-menu.css';
+@import './layout/footer.css';
