@@ -1,15 +1,12 @@
 .heroimage {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-color: var(--hero-image-background);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../../images/hero/bg.jpg);
+    url(../../images/hero/mobile-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,13 +18,14 @@
   align-items: center;
 }
 .hero-title {
-  max-width: 496px;
-  margin-bottom: 36px;
+  max-width: 320px;
+  font-size: 36px;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  margin-bottom: 72px;
 
   color: var(--header-team-card-background);
 }
@@ -48,7 +46,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.64px;
 
   color: var(--header-team-card-background);
   background-color: var(--cta-focused-active-links);
@@ -57,4 +55,46 @@
 .modal-button-image:hover,
 .modal-button-image:focus {
   background-color: var(--pressed-state-cta);
+}
+
+@media screen and (min-width: 768px) {
+  .heroimage {
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../../images/hero/tablet-bg.jpg);
+  }
+
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .heroimage {
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../../images/hero/pc-bg.jpg);
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 48px;
+
+    color: var(--header-team-card-background);
+  }
 }
