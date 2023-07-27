@@ -13,30 +13,30 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Homework4</title>
+    <title>Homework7</title>
 </head>
 
 <body>
     <!-- Top line -->
-    <header class="page-header">
+    <header class="page-header" hero-container>
         <div class="header-container container">
             <nav class="nav">
                 <a class="logo logo-pad link" href="./index.html">Web<span class="logo-studio">Studio</span></a>
                 <ul class="menu-list list">
                     <li class="menu-list-item">
-                        <a class="header-link-padding active link menu-list-c" href="./index.html">Studio</a>
+                        <a class="header-list-padding active link menu-list-c" href="./index.html">Studio</a>
                     </li>
 
                     <li class="menu-list-item">
-                        <a class="header-link-padding  link" href="./portfolio.html">Portfolio</a>
+                        <a class="header-list-padding  link" href="./portfolio.html">Portfolio</a>
                     </li>
 
                     <li class="menu-list-item">
-                        <a class="header-link-padding link" href="#contacts">Contacts</a>
+                        <a class="header-list-padding link" href="#contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
-            <address>
+            <address class="address">
                 <ul class="menu-link list">
                     <li class="menu-link-item">
                         <a class="header-link-padding link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -46,23 +46,24 @@
                     </li>
                 </ul>
             </address>
+            <button class="burger-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="burger-icon" width="30" height="19">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
-        <button class="burger-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
-            <svg class="burger-icon" width="30" height="19">
-                <use href="./images/icons.svg#icon-burger"></use>
-            </svg>
-        </button>
+
     </header>
     <main>
         <!-- Studio -->
-        <section class="heroimage">
+        <!-- <section class="heroimage">
             <div class="hero-container container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
                 <button class="modal-button-image" type="button" data-modal-open>Order Service</button>
             </div>
-        </section>
+        </section> -->
         <!-- Section1 -->
-        <section class="advantage">
+        <!-- <section class="advantage">
             <div class="container">
                 <h2 class="hidden">Studio</h2>
                 <ul class="advantage-list list">
@@ -115,11 +116,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Section2 -->
 
-        <section class="production">
+        <!-- <section class="production">
             <div class="production-container container">
                 <h2 class="subtitile">What are we doing</h2>
                 <ul class="production-list list">
@@ -136,11 +137,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Section3 -->
 
-        <section class="workers">
+        <!-- <section class="workers">
             <div class="workers-container container">
                 <h2 class="subtitile" id="contacts">Our Team</h2>
                 <ul class="workers-list list">
@@ -302,9 +303,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Section 5 Costumers -->
-        <section class="costumers">
+        <!-- <section class="costumers">
             <div class="container">
                 <h2 class="subtitile">Customers</h2>
                 <ul class="costumers-list list">
@@ -352,9 +353,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer-container container">
             <div class="footer-list">
                 <a class="logo link margb" href="./index.html">Web<span class="logo-studio-dark">Studio</span>
@@ -411,7 +412,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-window-close-btn" data-modal-close>
@@ -473,7 +474,7 @@
         </div>
     </div>
 
-    <div class="mobile-menu is-open js-menu-container">
+    <div class="mobile-menu js-menu-container">
         <button type="button" class="modal-window-close-btn js-close-menu">
             <svg class="modal-window-close-btn-img" width="8" height="8">
                 <use href="./images/icons.svg#close-black"></use>
