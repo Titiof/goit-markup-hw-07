@@ -136,8 +136,3 @@
 .social-list-img .social-link:focus {
   background-color: var(--pressed-state-cta);
 }
-
-.social-list-futer .social-link:hover,
-.social-list-futer .social-link:focus {
-  background-color: var(--valid-success);
-}
