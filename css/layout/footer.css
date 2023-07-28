@@ -72,12 +72,12 @@
 }
 
 .footer-form-label {
-  display: flex;
+  width: 100%;
 }
 .label-input {
   width: 264px;
   height: 40px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--header-team-card-background);
   background-color: transparent;
   font-size: 12px;
   line-height: 1.5;
@@ -182,7 +182,7 @@
   .label-input {
     width: 264px;
     height: 40px;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--header-team-card-background);
     background-color: transparent;
     font-size: 12px;
     line-height: 1.5;

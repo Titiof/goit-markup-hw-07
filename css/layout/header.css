@@ -91,9 +91,7 @@
   .header-list-padding {
     padding-top: 24px;
     padding-bottom: 24px;
-    transition-property: color;
-    transition-duration: var(--timing-duration);
-    transition-timing-function: var(--timing-function);
+    transition: color var(--timing-duration) var(--timing-function);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
@@ -103,9 +101,7 @@
   .header-link-padding {
     padding-top: 4px;
     padding-bottom: 4px;
-    transition-property: color;
-    transition-duration: var(--timing-duration);
-    transition-timing-function: var(--timing-function);
+    transition: color var(--timing-duration) var(--timing-function);
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.48px;
@@ -166,10 +162,17 @@
   .header-link-padding {
     padding-top: 24px;
     padding-bottom: 24px;
-    transition-property: color;
-    transition-duration: var(--timing-duration);
-    transition-timing-function: var(--timing-function);
     font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: var(--body-text-slate);
+  }
+
+  .header-link-padding {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
     color: var(--body-text-slate);

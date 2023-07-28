@@ -217,6 +217,8 @@
 
 .review-form-submit-btn {
   min-width: 169px;
+  margin-right: auto;
+  margin-left: auto;
   height: 56px;
   display: block;
   font-size: 16px;
