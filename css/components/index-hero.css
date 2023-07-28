@@ -17,6 +17,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .hero-title {
   max-width: 320px;
   font-size: 36px;
@@ -56,10 +57,23 @@
 .modal-button-image:focus {
   background-color: var(--pressed-state-cta);
 }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .heroimage {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../../images/hero/mobile-bg@2x.jpg);
+  }
+}
 
 @media screen and (min-width: 768px) {
   .heroimage {
     max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -76,6 +90,18 @@
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .heroimage {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../../images/hero/tablet-bg@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .heroimage {
     max-width: 1440px;
@@ -84,6 +110,8 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../../images/hero/pc-bg.jpg);
+    padding-bottom: 188px;
+    padding-top: 188px;
   }
 
   .hero-container {
@@ -96,5 +124,17 @@
     margin-bottom: 48px;
 
     color: var(--header-team-card-background);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+  screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+  .heroimage {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../../images/hero/pc-bg@2x.jpg);
   }
 }
