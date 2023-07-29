@@ -75,7 +75,7 @@
 
   top: 0;
   left: 0;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--timing-duration) var(--timing-function);
   height: 100%;
   padding: 40px 32px;
@@ -97,7 +97,6 @@
 
 .gallery-item-title {
   margin-bottom: 8px;
-  /* text-align: center; */
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -120,7 +119,7 @@
   }
 
   .button-menu {
-    max-width: 768px;
+    max-width: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,12 +127,46 @@
     gap: 72px 24px;
     margin-bottom: 64px;
   }
-  .gallery-content {
-    width: 356px;
+
+  .modal-button {
+    padding: 12px 24px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
   }
 
   .gallery-item {
     flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .portfolio {
+    padding: 100px 156px 120px;
+  }
+
+  .button-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+
+  .gallery {
+    gap: 48px 24px;
+  }
+
+  .gallery-item {
+    flex-basis: calc(
+      (100% - var(--column-indent) * calc(var(--column-items) - 1)) /
+        var(--column-items)
+    );
   }
 }
 
