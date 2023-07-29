@@ -163,9 +163,6 @@
   }
 
   .gallery-item {
-    flex-basis: calc(
-      (100% - var(--column-indent) * calc(var(--column-items) - 1)) /
-        var(--column-items)
-    );
+    flex-basis: calc((100% - 48px) / 3);
   }
 }

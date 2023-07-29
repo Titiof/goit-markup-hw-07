@@ -12,8 +12,6 @@
   --dark-overlays-shadows-headings: #2e2f42;
   --pressed-state-cta: #404bbf;
   --cta-focused-active-links: #4d5ae5;
-  --column-indent: 24px;
-  --column-items: 3;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --timing-duration: 250ms;
 }
