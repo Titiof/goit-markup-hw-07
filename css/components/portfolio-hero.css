@@ -114,6 +114,22 @@
   color: var(--body-text-slate);
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding: 64px 16px;
+  }
+
+  .button-menu {
+    max-width: 768px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 72px 24px;
+    margin-bottom: 64px;
+  }
+}
+
 /* .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
