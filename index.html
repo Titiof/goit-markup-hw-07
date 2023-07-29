@@ -48,7 +48,7 @@
                 </ul>
             </address>
             <button class="burger-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="burger-icon" width="30" height="19">
+                <svg class="burger-icon" width="32" height="22">
                     <use href="./images/icons.svg#icon-burger"></use>
                 </svg>
             </button>
@@ -129,15 +129,28 @@
                 <h2 class="subtitile">What are we doing</h2>
                 <ul class="production-list list">
                     <li class="production-item">
-                        <img class="production-pic" src="./images/section2/pc.jpg" alt="PC" width="360" height="300">
+                        <picture>
+                            <source srcset="./images/section2/pc@2x.jpg 2x" media="(min-width: 1148px)">
+                            <img class="production-pic" src="./images/section2/pc.jpg" alt="PC" width="360"
+                                height="300">
+                            </source>
+                        </picture>
                     </li>
                     <li class="production-item">
-                        <img class="production-pic" src="./images/section2/phones.jpg" alt="phones" width="360"
-                            height="300">
+                        <picture>
+                            <source srcset="./images/section2/phones@2x.jpg2x 2x" media="(min-width: 1148px)">
+                            <img class="production-pic" src="./images/section2/phones.jpg" alt="phones" width="360"
+                                height="300">
+                            </source>
+                        </picture>
                     </li>
                     <li class="production-item">
-                        <img class="production-pic" src="./images/section2/pcandphone.jpg" alt="pc and phone"
-                            width="360" height="300">
+                        <picture>
+                            <source srcset="./images/section2/pcandphone@2x.jpg 2x" media="(min-width: 1148px)">
+                            <img class="production-pic" src="./images/section2/pcandphone.jpg" alt="pc and phone"
+                                width="360" height="300">
+                            </source>
+                        </picture>
                     </li>
                 </ul>
             </div>
@@ -497,7 +510,7 @@
         </div>
     </div>
 
-    <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
         <button type="button" class="modal-window-close-btn js-close-menu">
             <svg class="modal-window-close-btn-img" width="8" height="8">
                 <use href="./images/icons.svg#close-black"></use>

@@ -1,6 +1,7 @@
 .heroimage {
   padding-top: 112px;
   padding-bottom: 112px;
+  width: 100%;
   background-color: var(--hero-image-background);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
